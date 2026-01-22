@@ -2,19 +2,25 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Process Trace Access</title>
+  <title>Protected Information Access</title>
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 100px;">
+
+<body style="font-family: Arial; text-align: center; margin: 80px; line-height: 1.6;">
 
 <script>
   var pwd = prompt("Enter access password:");
+
   if (pwd !== "254365") {
-    document.body.innerHTML = "<h2>Access Denied</h2><p>Unauthorized access.</p>";
+    document.body.innerHTML = 
+      "<h2>Access Denied</h2>" +
+      "<p>Unauthorized access.</p>";
   } else {
     document.body.innerHTML =
-      "<h2>Authorized Access</h2>" +
-      "<p>杭州师范大学（Hangzhou Normal University），简称“杭师大”（HZNU），位于浙江省杭州市。由杭州市人民政府主办、教育部批准的省属普通高等学校。浙江省重点建设高校、杭州市重点支持高校、卓越教师培养计划实施高校、博士学位授予单位、联合国教科文组织中国创业教育联盟理事单位、全国首批国家级大学生创新创业训练计划实施高校、全国首批深化创新创业教育改革示范高校。</p>" 
-      ;
+      "<h2>Authorized Information</h2>" +
+      "<p><b>杭州师范大学（Hangzhou Normal University）</b>，简称“杭师大”（HZNU），位于浙江省杭州市。</p>" +
+      "<p>由杭州市人民政府主办、教育部批准的省属普通高等学校。</p>" +
+      "<p>浙江省重点建设高校、杭州市重点支持高校、卓越教师培养计划实施高校、博士学位授予单位。</p>" +
+      "<p>联合国教科文组织中国创业教育联盟理事单位、全国首批国家级大学生创新创业训练计划实施高校、全国首批深化创新创业教育改革示范高校。</p>";
   }
 </script>
 
