@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Process Trace Access</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 100px;">
+
+<script>
+  var pwd = prompt("Enter access password:");
+  if (pwd !== "254365") {
+    document.body.innerHTML = "<h2>Access Denied</h2><p>Unauthorized access.</p>";
+  } else {
+    document.body.innerHTML =
+      "<h2>Authorized Access</h2>" +
+      "<p>Process trace record unlocked.</p>" +
+      "<p><b>STEP 1:</b> Raw material verified</p>" +
+      "<p><b>STEP 2:</b> Key process completed</p>" +
+      "<p><b>STEP 3:</b> QC passed</p>" +
+      "<p><b>STEP 4:</b> Release approved</p>";
+  }
+</script>
+
+</body>
+</html>
